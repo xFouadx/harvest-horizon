@@ -179,7 +179,6 @@ header {
     background: none;
     border: none;
     color: #000000 !important;
-    z-index: 1001;
   }
 
 .navbar{
@@ -450,3 +449,4 @@ main {
   }
 
 /* END OF CONTACT US */
+
