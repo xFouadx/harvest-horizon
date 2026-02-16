@@ -7,7 +7,7 @@ header {
     max-width: 1400px;              /* optional cap */
     margin: 20px auto;              /* centers it */
     padding: 5px 0;
-
+    position: relative;
     background: rgba(255, 255, 255, 0.911);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(10px);
@@ -173,8 +173,8 @@ header {
   .toggle-btn {
     display: block;
     position: absolute;
-    top: -170px;
-    left: 340px;
+    top: 20px;
+    right: 20px;   /* keeps it inside the rectangle */
     font-size: 28px;
     background: none;
     border: none;
