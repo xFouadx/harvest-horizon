@@ -11,8 +11,6 @@ header {
     background: rgba(255, 255, 255, 0.911);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(10px);
-    padding-top: 10px;
-
     border-radius: 12px;            /* rounded corners */
 }
 
@@ -451,6 +449,7 @@ main {
   }
 
 /* END OF CONTACT US */
+
 
 
 
