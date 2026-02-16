@@ -173,13 +173,13 @@ header {
   .toggle-btn {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 20px;   /* keeps it inside the rectangle */
     font-size: 28px;
     background: none;
     border: none;
     color: #000000 !important;
-    z-index: 1001;
+    z-index: 1002;
   }
 
 .navbar{
@@ -450,5 +450,6 @@ main {
   }
 
 /* END OF CONTACT US */
+
 
 
