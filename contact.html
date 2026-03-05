@@ -10,7 +10,6 @@
 <body>
 
     <header>
-        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
         <div class="header-branding">
             <img src="imgs/logo.png" alt="Company Logo" class="logo">
             <h1 class="brand">HARVEST HORIZON</h1>
@@ -18,17 +17,20 @@
 
         
             <nav class="navbar">
+              <button class="toggle-btn" onclick="toggleMenu()">☰</button>
               <ul class="nav-links" id="navLinks">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/vision.html">Vision</a></li>
 
                 <li class="dropdown">
-              <a href="#" onclick="toggleDropdown(event)">Our Products ▼</a>
-              <ul class="dropdown-menu" id="productDropdown">
+                    <a href="#">Our Products ▼</a>
+                    <ul class="dropdown-menu">
                       <li><a href="/fruits.html">Fruits</a></li>
                       <li><a href="/vegetables.html">Vegetables</a></li>
-                      <li><a href="/maps.html">MAPs</a></li>
+                      <li><a href="/herbal.html">Herbal Plants</a></li>
+                      <li><a href="/floral.html">Floral Plants</a></li>
+                      <li><a href="/seeds.html">Seeds</a></li>
 
                     </ul>
                   </li>
@@ -48,8 +50,8 @@
         <main class="contact-content">
             <h2>Contact Us</h2>
           
-            <p><strong>Phone:</strong> +20 120 450 2878 </p>
-            <p><strong>Email:</strong> fouad.aziz@harvesthorizoneg.com</p>
+            <p><strong>Phone:</strong> +0120 450 2878</p>
+            <p><strong>Email:</strong> info@harvesthorizoneg.com</p>
             <p><strong>Address:</strong> 13 Africa st., Mostafa Al-Nahas, Zone 10, Nasr City, Cairo, Egypt</p>
           
             <hr class="section-divider">
@@ -58,8 +60,7 @@
             <form class="inquiry-form" action="https://formsubmit.co/fouad.aziz@harvesthorizoneg.com" method="POST">
 
               <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://www.harvesthorizoneg.com/thank-you.html">
-
+              <input type="hidden" name="_next" value="/thank-you.html">
               <label for="name">Name:</label><br>
               <input type="text" id="name" name="name" required><br><br>
           
@@ -76,27 +77,43 @@
   </main>
 </div>
 
-    <footer>
-        <p>&copy; 2025 Harvest Horizon. All rights reserved.</p>
-    </footer>
-    <script>
-      function toggleMenu() {
-        document.getElementById('navLinks').classList.toggle('show');
-      }
-    
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Logo on the left -->
+    <div class="footer-logo">
+      <img src="imgs/logo.png" alt="Logo" class="logo-footer">
+    </div>
 
-    function toggleDropdown(event) {
-    event.preventDefault();
-    const dropdown = document.getElementById('productDropdown');
-    dropdown.classList.toggle('show');
+    <!-- Middle section: contact + social -->
+    <div class="footer-middle">
+    <div class="footer-contact">
+      <p class="contact-title">Contact Us:</p>
+      <p>Email: info@harvesthorizoneg.com</p>
+      <p>Phone: +0120 450 2878</p>
+    </div>
+
+      <div class="footer-social">
+        <p><strong>Follow Us:</strong></p>
+        <a href="https://facebook.com" target="_blank">Facebook</a> | <a href="https://linkedin.com/company/harvest-horizon-egypt" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+          <p class="copyright">&copy; 2026 Harvest Horizon. All rights reserved.</p>
+</footer>
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('show');
   }
 
-  </script>
+  function toggleDropdown(event) {
+    event.preventDefault();  // prevent navigation
+    document.getElementById('productDropdown').classList.toggle('show');
+  }
+</script>
 
       
     <script src="script.js"></script>
 
 </body>
 </html>
-
 

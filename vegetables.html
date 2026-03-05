@@ -10,7 +10,6 @@
 <body>
 
     <header>
-        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
         <div class="header-branding">
             <img src="imgs/logo.png" alt="Company Logo" class="logo">
             <h1 class="brand">HARVEST HORIZON</h1>
@@ -18,6 +17,7 @@
 
         
             <nav class="navbar">
+              <button class="toggle-btn" onclick="toggleMenu()">☰</button>
               <ul class="nav-links" id="navLinks">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
@@ -28,7 +28,9 @@
               <ul class="dropdown-menu" id="productDropdown">
                       <li><a href="/fruits.html">Fruits</a></li>
                       <li><a href="/vegetables.html">Vegetables</a></li>
-                      <li><a href="/maps.html">MAPs</a></li>
+                      <li><a href="/herbal.html">Herbal Plants</a></li>
+                      <li><a href="/floral.html">Floral Plants</a></li>
+                      <li><a href="/seeds.html">Seeds</a></li>
 
                     </ul>
                   </li>
@@ -40,83 +42,138 @@
           
           
     </header>
-<div>  
-    </header>
-<div>
+
     <main>
 
       <div class ="textbox">
-          <main>
-            <h2 class="section-title">Vegetables</h2>
-            <p class="centered-text">
-              Our vegetables are hand-selected from Egypt’s finest farms, ensuring freshness, quality, and consistency from harvest to shipment.
-            </p>
             
-            <hr class="section-divider">
             <p class="disclaimer-text">
               <em>Disclaimer:</em> Product images are for illustrative purposes only and may not represent the exact appearance or quality of purchased goods.
             </p>
-            <section class="product-category">
-              <h3><strong>Onion</strong></h3>
-              <p>Egyptian onions are renowned for their distinctive taste, uniform shape, and vibrant color—qualities that set them apart in global markets and make them a preferred choice for export.</p>
-          
+          <section class="category-header">
+            <h3>Fresh Vegetables</h3>
+            <p>Our vegetables are hand-selected from Egypt’s finest farms, ensuring freshness, quality, and consistency from harvest to shipment.</p>
+            </section>
+
+          <section class="product-category">
+              
               <div class="subcategory">
                 <img src="/imgs/redonion.png" alt="Red Onion" class="fruit-image">
-                <h4>Giza Red Onion</h4>
-                <p>Giza Red onions are a premium Egyptian variety, distinguished by their uniform spherical shape, vibrant color, and rich flavor—backed by superior phytochemical properties that make them highly valued in both culinary and export markets.</p>
-          
-                <img src="/imgs/goldenonion.png" alt="Golden Onion" class="fruit-image">
-                <h4>Giza 20 Onion</h4>
-                <p>Giza 20 is a widely cultivated Egyptian onion variety, known for its strong pungency, high yield, and adaptability—making it a reliable choice for both local markets and large-scale export.</p>
+                <h4>Red Onion</h4>
+                <div class="card-buttons">
+                  <span class="btn-toggle active" data-target="desc">Description</span>
+                  <span class="btn-toggle" data-target="specs">Specifications</span>
+                </div>
+                <div class="card-text-viewport">
+                  <div class="card-text-inner">
+                    <p class="desc active">Red onions are a premium Egyptian variety, distinguished by their uniform spherical shape, vibrant color, and rich flavor—backed by superior phytochemical properties that make them highly valued in both culinary and export markets.</p>
+                    <ul class="specs">
+                        <li><strong>varieties:</strong> Giza Red</li>
+                        <li><strong>Size:</strong> 40-80 mm, according to requirements.</li>
+                        <li><strong>Packaging:</strong> 25kg polypropylene bags, or according to requirements</li>
+                        <li><strong>Pesticides:</strong> MRL according to EU regulation EC 396/2005</li>
+                        <li><strong>Availability:</strong> May - Oct</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </section>
+
+              <div class="subcategory">
+                <img src="/imgs/goldenonion.png" alt="Golden Onion" class="fruit-image">
+                <h4>Golden Onion</h4>
+                <div class="card-buttons">
+                  <span class="btn-toggle active" data-target="desc">Description</span>
+                  <span class="btn-toggle" data-target="specs">Specifications</span>
+                </div>
+                <div class="card-text-viewport">
+                  <div class="card-text-inner">
+                    <p class="desc active">Golden onion is a widely cultivated Egyptian onion variety, known for its strong pungency, high yield, and adaptability—making it a reliable choice for both local markets and large-scale export.</p>
+                    <ul class="specs">
+                        <li><strong>varieties:</strong> Giza 20</li>
+                        <li><strong>Size:</strong> 40-80 mm, according to requirements.</li>
+                        <li><strong>Packaging:</strong> 25kg polypropylene bags, or according to requirements</li>
+                        <li><strong>Pesticides:</strong> MRL according to EU regulation EC 396/2005</li>
+                        <li><strong>Availability:</strong> May - Oct</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
           
 
           
-            <section class="product-category">
-              <h3>Garlic</h3>
-              <p>We export premium-grade Egyptian garlic, carefully selected and processed to meet international standards for quality, size, and shelf life.</p>
-          
+            
               <div class="subcategory">
                 <img src="/imgs/garlic.png" alt="Navel Orange" class="fruit-image">
                 <h4>Egyptian Garlic</h4>
-                <p>Egyptian garlic is known for its large, well-formed cloves and intense aroma—making it a powerful and sought-after ingredient in international kitchens and food industries.</p>
+                <div class="card-buttons">
+                  <span class="btn-toggle active" data-target="desc">Description</span>
+                  <span class="btn-toggle" data-target="specs">Specifications</span>
+                </div>
+                <div class="card-text-viewport">
+                  <div class="card-text-inner">
+                    <p class="desc active">Egyptian garlic is known for its large, well-formed cloves and intense aroma—making it a powerful and sought-after ingredient in international kitchens and food industries.</p>
+                    <ul class="specs">
+                        <li><strong>varieties:</strong> Allium Sativum</li>
+                        <li><strong>Size:</strong> 30-60 mm, according to requirements.</li>
+                        <li><strong>Packaging:</strong> 25kg polypropylene bags, or according to requirements</li>
+                        <li><strong>Pesticides:</strong> MRL according to EU regulation EC 396/2005</li>
+                        <li><strong>Availability:</strong> May - Sep</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </section>
 
-            <section class="product-category">
-              <h3><strong>Potatoes</strong></h3>
-              <p>Egyptian potatoes are valued for their firm texture, consistent size, and long shelf life—making them an ideal choice for export and a staple in international food markets.</p>
-          
+
+
               <div class="subcategory">
                 <img src="/imgs/spunta.png" alt="Red Onion" class="fruit-image">
-                <h4>Spunta</h4>
-                <p>Spunta potatoes, one of Egypt’s leading export varieties, are known for their elongated shape, smooth yellow skin, and high productivity—perfect for both fresh consumption and industrial use.</p>
-          
-                <img src="/imgs/burren.png" alt="Golden Onion" class="fruit-image">
-                <h4>Burren</h4>
-                <p>Burren potatoes are prized for their round to oval shape, smooth skin, and excellent cooking qualities—making them a versatile variety favored in both domestic and international markets.</p>
-              
-                <img src="/imgs/caruso.png" alt="Golden Onion" class="fruit-image">
-                <h4>Caruso</h4>
-                <p>Commonly referred to as 'Cruze' by Egyptian farmers, Caruso potatoes are a high-yielding German variety known for their uniform oval shape, smooth skin, and excellent storage qualities—making them a strong performer in both local and export markets.</p>
-              </div>
-            </section>
-            <p class="disclaimer-text">
-              <em>Disclaimer:</em> Product images are for illustrative purposes only and may not represent the exact appearance or quality of purchased goods.
-            </p>
-            
-          </main>
-          
-        </section>
+                <h4>Potatoes</h4>
+                                <div class="card-buttons">
+                  <span class="btn-toggle active" data-target="desc">Description</span>
+                  <span class="btn-toggle" data-target="specs">Specifications</span>
+                </div>
+                <div class="card-text-viewport">
+                  <div class="card-text-inner">
+                    <p class="desc active">Potatoes, one of Egypt’s leading export vegetables, are known for their elongated shape, smooth yellow skin, and high productivity—perfect for both fresh consumption and industrial use.</p>
+                    <ul class="specs">
+                        <li><strong>varieties:</strong> Spunta, Burren or Caruso</li>
+                        <li><strong>Size:</strong> 30-70 mm, according to requirements.</li>
+                        <li><strong>Packaging:</strong> 25kg polypropylene bags, or according to requirements</li>
+                        <li><strong>Pesticides:</strong> MRL according to EU regulation EC 396/2005</li>
+                        <li><strong>Availability:</strong> Feb - Jun</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>   
+
     </main>
 </div>
 </main>
 </div>
 
-    <footer>
-        <p>&copy; 2025 Harvest Horizon. All rights reserved.</p>
-    </footer>
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Logo on the left -->
+    <div class="footer-logo">
+      <img src="imgs/logo.png" alt="Logo" class="logo-footer">
+    </div>
+
+    <!-- Middle section: contact + social -->
+    <div class="footer-middle">
+    <div class="footer-contact">
+      <p class="contact-title">Contact Us:</p>
+      <p>Email: info@harvesthorizoneg.com</p>
+      <p>Phone: +0120 450 2878</p>
+    </div>
+
+      <div class="footer-social">
+        <p><strong>Follow Us:</strong></p>
+        <a href="https://facebook.com" target="_blank">Facebook</a> | <a href="https://linkedin.com/company/harvest-horizon-egypt" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+          <p class="copyright">&copy; 2026 Harvest Horizon. All rights reserved.</p>
+</footer>
     <script>
       function toggleMenu() {
         document.getElementById('navLinks').classList.toggle('show');
@@ -131,10 +188,35 @@
 
   </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const cards = document.querySelectorAll(".card-text-viewport");
+
+    cards.forEach(viewport => {
+
+        const card = viewport.closest(".subcategory") || viewport.parentElement;
+        const buttons = card.querySelectorAll(".btn-toggle");
+        const inner = card.querySelector(".card-text-inner");
+
+        buttons.forEach((btn, index) => {
+            btn.addEventListener("click", function () {
+
+                inner.style.transform = "translateX(-" + (index * 100) + "%)";
+
+                buttons.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+
+            });
+        });
+
+    });
+
+});
+</script>
       
     <script src="script.js"></script>
 
 </body>
 </html>
-
 
