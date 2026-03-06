@@ -24,12 +24,7 @@ header {
     gap: 0px;                 
     margin: 0 0;
 }
-.header-branding {
-  flex-direction: column;
-  gap: 10px;
-  text-align: center;
-  margin-top: 0px;
-}
+
 .header-branding h1 {
   margin: 0;
   justify-content: center; 
@@ -104,46 +99,56 @@ header {
 }
 
 
+
+/* Dropdown container */
 .dropdown {
   position: relative;
 }
 
+/* Dropdown menu - initially hidden */
 .dropdown-menu {
   width: 180px;
   left: 0;
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
   background: #fff;
   padding: 30px;
   top: 100%;
   list-style: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
 
-  display: flex;              /* always flex */
+  display: flex;
   flex-direction: column;
 
+  opacity: 0;          /* hidden by default */
+  visibility: hidden;
   transition: opacity 0.3s ease;
 }
 
-.dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-}
-
-
-.dropdown-menu li {
-  padding: 5px 0;
-    width: 100%;
-  text-align: center;
-}
-
+/* Show menu on hover */
+.dropdown:hover .dropdown-menu,
 .dropdown-menu.show {
-  display: flex;
   opacity: 1;
   visibility: visible;
-  pointer-events: auto;
+}
+
+/* Menu items */
+.dropdown-menu li {
+  padding: 8px 15px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 100%;
+}
+
+/* Optional hover effect for items */
+.dropdown-menu li:hover {
+  background-color: rgba(0,0,0,0.05);
 }
 
 /* Responsive rules */
@@ -158,15 +163,8 @@ header {
 
 @media (min-width: 769px) {
 .dropdown:hover .dropdown-menu {
-    opacity: 1;
-  visibility: visible;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
 
-  background: white;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
   }
 }
 
@@ -174,18 +172,44 @@ header {
   .toggle-btn {
     display: block;
     position: absolute;
-    top: 15px;
-    right: 20px;   /* keeps it inside the rectangle */
+    margin-bottom: 49%;
+    left: 93%;   /* keeps it inside the rectangle */
     font-size: 28px;
     background: none;
     border: none;
     color: #000000 !important;
-    z-index: 1001;
+    z-index: 1200;
   }
 
-.navbar{
-    background-color: transparent !important;
-}
+  .dropdown-menu {
+    position: static;        /* 🔧 remove absolute positioning */
+    width: 100%;
+    padding: 10px 0;
+    background: white;       /* 🔧 solid background */
+    box-shadow: none;
+    border-radius: 0;
+
+    opacity: 1;
+    visibility: visible;
+  transition: all 0.3s ease;
+    display: none;           /* hidden until clicked */
+  }
+
+
+  .dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-menu li {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .dropdown-menu li a {
+    width: 100%;
+    display: block;
+  }
 
   .nav-links {
     position: fixed;
