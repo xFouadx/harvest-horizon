@@ -7,7 +7,7 @@ header {
     max-width: 1400px;              /* optional cap */
     margin: 20px auto;              /* centers it */
     padding: 5px 0;
-    position: relative;
+    position: absolute;
     background: rgba(255, 255, 255, 0.911);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(10px);
@@ -693,5 +693,6 @@ footer {
 }
 
 /* END OF CONTACT US */
+
 
 
