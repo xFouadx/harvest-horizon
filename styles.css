@@ -7,7 +7,7 @@ header {
     max-width: 1400px;              /* optional cap */
     margin: 20px auto;              /* centers it */
     padding: 5px 0;
-    position: absolute;
+    position: relative;
     background: rgba(255, 255, 255, 0.911);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(10px);
@@ -96,7 +96,6 @@ header {
 /* Toggle button */
 .toggle-btn {
   display: none;
-  position: absolute;
   font-size: 28px;
   background: white;
   border: none;
@@ -159,7 +158,7 @@ header {
 
 @media (min-width: 769px) {
 .dropdown:hover .dropdown-menu {
-  opacity: 0;
+    opacity: 1;
   visibility: visible;
   flex-direction: column;
   position: absolute;
@@ -175,7 +174,7 @@ header {
   .toggle-btn {
     display: block;
     position: absolute;
-    top: 1px;
+    top: 15px;
     right: 20px;   /* keeps it inside the rectangle */
     font-size: 28px;
     background: none;
@@ -694,7 +693,3 @@ footer {
 }
 
 /* END OF CONTACT US */
-
-
-
-
