@@ -95,7 +95,7 @@ header {
 
 /* Toggle button */
 .toggle-btn {
-  display: none;
+  position: absolute;
   font-size: 28px;
   background: white;
   border: none;
@@ -693,4 +693,5 @@ footer {
 }
 
 /* END OF CONTACT US */
+
 
