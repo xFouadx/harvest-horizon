@@ -54,7 +54,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: rgba(30, 255, 0, 0);
-    padding: 0px 10px;
+    padding: 0px 1px;
     position: relative;
     margin-top: 0px;
     transition: opacity 0.4s ease, visibility 0.4s ease;
@@ -75,7 +75,7 @@ header {
 .nav-links {
   background-color: transparent;
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: space-evenly;  /* or use space-around / space-evenly */
   gap: 100px; /* optional, for consistent spacing */
   list-style: none;
@@ -109,11 +109,11 @@ header {
 
 /* Dropdown menu - initially hidden */
 .dropdown-menu {
-  width: 180px;
+  width: 175px;
   left: 0;
   position: absolute;
   background: #fff;
-  padding: 30px;
+  padding: 5px;
   top: 100%;
   list-style: none;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -136,9 +136,11 @@ header {
 
 /* Menu items */
 .dropdown-menu li {
-  padding: 8px 15px;
+  padding: 1px 1px;
   width: 100%;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 
 .dropdown-menu li a {
@@ -146,6 +148,8 @@ header {
   color: #000;
   display: block;
   width: 100%;
+  text-align: center;
+  justify-content: center;
 }
 
 /* Optional hover effect for items */
@@ -239,8 +243,8 @@ header {
   .nav-links {
     position: fixed;
     top: 0;
-    left: -70%; /* Start off-screen to the left */
-    width: 50%;
+    left: -80%; /* Start off-screen to the left */
+    width: 60%;
     height: auto;               /* ✅ let it grow naturally */
     flex-direction: column;
     gap: 30px;                  /* ✅ space between links */
