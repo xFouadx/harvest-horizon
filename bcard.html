@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Business Card</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      width: 360px;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .logo img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width:  35%;
+      height: auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #222;
+    }
+
+    .title {
+      margin: 6px 0 22px;
+      font-size: 15px;
+      color: #666;
+    }
+
+    .links a {
+      display: block;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 10px;
+      background: #f1f1f1;
+      color: #222;
+      text-decoration: none;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    .links a:hover {
+      background: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <!-- Logo Slot -->
+    <div class="logo">
+      <!-- Replace logo.png with your logo file -->
+      <!-- <img src="logo.png" alt="Company Logo"> -->
+      <img src="imgs/logo.png">
+    </div>
+
+    <!-- Name and Title Slot -->
+    <h1>Fouad Aziz</h1>
+    <div class="title">Founder & Export Manager</div>
+
+    <div class="links">
+
+      <!-- Website Link -->
+      <a href="https://www.harvesthorizoneg.com" target="_blank">
+        Visit Website
+      </a>
+
+      <!-- Phone Number Link: opens dialer / can be saved from phone -->
+      <a href="tel:+20127081399">
+        Call: +20 127 081 3699
+      </a>
+
+      <!-- WhatsApp Conversation Link -->
+      <a href="https://wa.me/201204502878" target="_blank">
+        WhatsApp: +20 120 450 2878
+      </a>
+
+      <!-- Email Compose Link -->
+      <a href="mailto:fouad/aziz@harvesthorizoneg.com">
+        Email: fouad.aziz@harvesthorizoneg.com
+      </a>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
